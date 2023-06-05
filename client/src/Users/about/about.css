@@ -1,0 +1,176 @@
+.userabout{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+ }
+ 
+ .userabout .image{
+    flex:1 1 41rem;
+ }
+ 
+ .userabout .image img{
+    width: 100%;
+ }
+ 
+ .userabout .aboutcontent{
+    flex:1 1 41rem;
+ }
+ 
+ .userabout .aboutcontent .abouttitle{
+    font-size: 4rem;
+    color:var(--black);
+ }
+ 
+ .userabout .aboutcontent p{
+    font-size: 1.7rem;
+    color:var(--light-black);
+    padding:1rem 0;
+    line-height: 2;
+ }
+ 
+ .userabout .aboutcontent .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-top: 3rem;
+ }
+ 
+ .userabout .aboutcontent .icons-container .icons{
+    flex:1 1 16rem;
+    text-align: center;
+    background: var(--light-bg);
+    padding:3rem 1rem;
+    width: 11rem;
+ }
+ 
+ .userabout .aboutcontent .icons-container .icons img{
+    height: 5rem;
+ }
+ 
+ .userabout .aboutcontent .icons-container .icons h3{
+    padding-top: 1rem;
+    font-size: 2rem;
+    color:var(--light-black);
+    font-weight: normal;
+ }
+ .userabout .aboutcontent .close {
+   position: absolute;
+    top: 0;
+    background-color: #fff;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+ }
+ .userabout .aboutcontent .close:hover{
+   color: var(--peru);
+ }
+ 
+ .userabout .aboutcontent h2 {
+   margin-top: 0;
+   color: #333;
+   font-size: 2rem;
+ }
+ .userabout .aboutcontent .aboutcontent-1 {
+   max-height: 30%;
+   overflow: auto;
+   font-size: 2rem;
+   flex: 1;
+ }
+ .userabout .aboutcontent .aboutcontent-2 {
+   max-height: 30%;
+   overflow: auto;
+   font-size: 2rem;
+   flex: 1;
+ }
+ .userabout .aboutcontent .vl {
+   border-left: 2px solid black;
+   height: auto;
+   width: 1rem;
+   margin-left:25px;
+ }
+ 
+ .popupmodal {
+   position: fixed;
+   display: flex;
+   border-radius: 5px;
+   width: 60%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: #fff;
+   padding: 50px;
+   z-index: 1000;
+}
+
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.7);
+   z-index: 1000;
+}
+
+@media only screen and (min-width: 768px) {
+   .userabout .image{
+     flex:1 1 41rem;
+     max-width: none;
+   }
+ 
+   .userabout .aboutcontent{
+     flex:1 1 41rem;
+     max-width: none;
+   }
+ 
+   .userabout .aboutcontent .icons-container .icons{
+     flex:1 1 16rem;
+     max-width: none;
+   }
+ 
+   .popupmodal {
+     width: 70%;
+     max-width: 80rem;
+   }
+
+   .userabout .aboutcontent .aboutcontent-2 {
+      max-height: 100%;
+      overflow: auto;
+      font-size: 1.5rem;
+      flex: 1;
+    }
+ }
+
+ @media only screen and (min-width: 375px) {
+   .userabout .image{
+     flex:1 1 41rem;
+     max-width: none;
+   }
+ 
+   .userabout .aboutcontent{
+     flex:1 1 41rem;
+     max-width: none;
+   }
+ 
+   .userabout .aboutcontent .icons-container .icons{
+     flex:1 1 16rem;
+     max-width: none;
+   }
+ 
+   .popupmodal {
+     width: 90%;
+     max-width: 80rem;
+     height: 60rem;
+   }
+
+   .userabout .aboutcontent .aboutcontent-2 {
+      max-height: 100%;
+      overflow: auto;
+      font-size: 1rem;
+      flex: 1;
+    }
+ }

@@ -1,0 +1,75 @@
+.userfooter{
+    text-align: center;
+    /* padding-bottom: 10rem; */
+ }
+ 
+ .userfooter .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:2rem;
+ }
+ 
+ .userfooter .icons-container .icons{
+    text-align: center;
+    padding:3rem 2rem;
+ }
+ 
+ .userfooter .icons-container .icons i{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: var(--peru);
+    color:var(--white);
+    margin-bottom: .5rem;
+    line-height: 5.8rem;
+    font-size: 2rem;
+ }
+ 
+ .userfooter .icons-container .icons h3{
+    font-size: 2rem;
+    color:var(--black);
+    padding:1rem 0;
+ }
+ 
+ .userfooter .icons-container .icons p{
+    line-height: 1.5;
+    font-size: 1.7rem;
+    color:var(--light-black);
+    text-transform: none;
+ }
+ .userfooter .icons-container .icons a{
+   line-height: 1.5;
+   font-size: 1.7rem;
+   color:#2691d9;
+   text-transform: none;
+}
+ 
+ .userfooter .share{
+    margin:2rem 0;
+ }
+ 
+ .userfooter .share a{
+    height: 6rem;
+    width: 6rem;
+    line-height: 5.8rem;
+    color:var(--peru);
+    margin:0 .3rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+ }  
+ 
+ .userfooter .share a:hover{
+    background: var(--black);
+ }
+ 
+ .userfooter .credit{
+    padding-top: 2.5rem;
+    margin-top: 3rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color:var(--light-black);
+ }
+ 
+ .userfooter .credit span{
+    color:var(--peru);
+ }

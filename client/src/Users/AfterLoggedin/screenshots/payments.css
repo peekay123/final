@@ -1,0 +1,141 @@
+.payment {
+    width: 100vw;
+	min-height: 86vh;
+	background: var(--white);
+	font-size: 1.2rem;
+	justify-content: center;
+	align-items: center;
+  }
+  .modal-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .payment-overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .payment.active .payment-overlay {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1000;
+  }
+  .modal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 24px;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 1000;
+  }
+  .payment.active .modal-box {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .modal-box i {
+    font-size: 70px;
+    color: #ff6e01;
+  }
+  .modal-box h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+  }
+  .modal-box h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+  }
+  .modal-box .button {
+    margin-top: 25px;
+  }
+
+  .payment .heading h3{
+    color:var(--black);
+    font-size: 3rem;
+  }
+  
+  .con {
+      margin: 20px 60px;
+    }
+    
+    .drop-container {
+      position: relative;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px dashed #555;
+      color: #444;
+      cursor: pointer;
+      transition: background .2s ease-in-out, border .2s ease-in-out;
+    }
+    
+    .drop-container:hover {
+      background: #eee;
+      border-color: #111;
+    }
+    
+    .drop-container:hover .drop-title {
+      color: #222;
+    }
+    
+    .drop-title {
+      color: #444;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      transition: color .2s ease-in-out;
+    }
+    
+    input[type=file] {
+      width: 350px;
+      max-width: 100%;
+      color: #444;
+      padding: 5px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #555;
+    }
+    
+    input[type=file]::file-selector-button {
+      margin-right: 20px;
+      border: none;
+      background: #ff6e01;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: background .2s ease-in-out;
+    }
+    
+    input[type=file]::file-selector-button:hover {
+      background: #ff8b31;
+    }
+
+  

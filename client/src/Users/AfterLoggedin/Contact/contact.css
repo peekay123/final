@@ -1,0 +1,75 @@
+.contact{
+    background: var(--white);
+ }
+ 
+ .contact .heading span{
+    color:var(--black);
+ }
+ 
+ .contact .heading h3{
+    color:var(--black);
+ }
+ 
+ .contact form{
+    padding:2rem;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+ }
+ 
+ .contact form .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+ }
+ 
+ .contact form .box-container .box{
+    flex:1 1 41rem;
+ }
+ 
+ .contact form .box-container .box .inputBox input,
+ .contact form .box-container .box .inputBox textarea{
+    width: 100%;
+    margin:1rem 0;
+    padding:1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color:var(--light-black);
+    border:var(--border);
+    text-transform: none;
+ }
+ 
+ .contact form .box-container .box .inputBox input::placeholder,
+ .contact form .box-container .box .inputBox textarea::placeholder{
+    text-transform: capitalize;
+ }
+ 
+ .contact form .box-container .box .inputBox input:focus,
+ .contact form .box-container .box .inputBox textarea:focus{
+    background: var(--black);
+    color:var(--white);
+ }
+ 
+ .contact form .box-container .box .inputBox input:focus::placeholder,
+ .contact form .box-container .box .inputBox textarea:focus::placeholder{
+    color:var(--light-white);
+ }
+ 
+ .contact form .box-container .box .inputBox textarea{
+    height: 20rem;
+    resize: none;
+ }
+ 
+ .contact form .box-container .box .inputBox .map{
+    height: 20.2rem;
+    width: 100%;
+    margin:1rem 0;
+ }
+ 
+ .contact form .box-container .box .inputBox span{
+    color:var(--light-black);
+    font-size: 2rem;
+ }
+ input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+    margin: 0;
+	}
